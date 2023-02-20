@@ -2,10 +2,10 @@
  * @Description: 
  * @Author: Qing Shi
  * @Date: 2022-09-17 23:36:36
- * @LastEditTime: 2023-02-19 15:35:19
+ * @LastEditTime: 2023-02-20 22:33:42
 -->
 <template>
-  <div class="common-layout" style="width: 100%; height: 100vh; overflow-y: auto; background-color: rgb(238, 236, 236);">
+  <div class="common-layout" style="width: 100%; height: 100vh; overflow-y: auto; background-color: #FFFFFF;">
     <el-container>
       <el-header>
         <Header/>
@@ -14,7 +14,7 @@
         <Main />
       </el-main>
       <el-footer>
-        <div style="text-align: center; background-color: #1f4478; color: white">
+        <div style="text-align: center;">
           Copyright © CSIE 2023 & CIEDH 2023
         </div>
       </el-footer>
