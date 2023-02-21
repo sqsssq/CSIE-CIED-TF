@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Qing Shi
  * @Date: 2022-11-20 23:25:35
- * @LastEditTime: 2023-02-21 01:16:35
+ * @LastEditTime: 2023-02-21 16:57:48
 -->
 <template>
     <div style="font-size: 16px; color: #212529">
@@ -41,26 +41,38 @@
                                 </h2>
                                 <div class="sq_content">
 
-                                    <h3 style="color: red; font-size: 22px;">
+                                    <h3 style="font-size: 22px;">
                                         {{ $t("topic_02.CSIE2023.themeTitle") }}
                                     </h3>
                                     <h3>
                                         {{ $t("topic_02.CSIE2023.theme") }}
                                     </h3>
-                                    <h3 style="color: red; font-size: 22px;">
+                                    <h3 style="font-size: 22px;">
                                         {{ $t("topic_02.CSIE2023.notice") }}
                                     </h3>
-                                    <ul>
-                                        <li v-for="item in 28" :key="'c1Topic' + item">
-                                            {{ $t(`topic_02.CSIE2023.topic.${item}`) }}
-                                        </li>
-                                    </ul>
+                                    <el-row>
+                                        <el-col :span="12">
+                                            <ul>
+                                                <li v-for="item in 15" :key="'c1Topic' + item">
+                                                    {{ $t(`topic_02.CSIE2023.topic.${item}`) }}
+                                                </li>
+                                            </ul>
+                                        </el-col>
+
+                                        <el-col :span="12">
+                                            <ul>
+                                                <li v-for="item in 13" :key="'c1Topic' + item">
+                                                    {{ $t(`topic_02.CSIE2023.topic.${item + 15}`) }}
+                                                </li>
+                                            </ul>
+                                        </el-col>
+                                    </el-row>
                                 </div>
                             </div>
                             <div>
                                 <h2><span></span>{{ $t("topic_02.CIEDH2023.title") }}</h2>
                                 <div class="sq_content">
-                                    <h3 style="color: red; font-size: 22px;">
+                                    <h3 style="font-size: 22px;">
                                         {{ $t("topic_02.CIEDH2023.notice") }}
                                     </h3>
                                     <ul>
@@ -75,7 +87,7 @@
                     <div id="03" class="conferencePart">
                         <h1>{{ $t("chairmen_03_title") }}</h1>
                         <div>
-                            <div>
+                            <!-- <div>
 
                                 <h2>
                                     <span></span>
@@ -85,7 +97,8 @@
                                     <el-row :gutter="10">
                                         <el-col v-for="(o, index) in 3" :key="o" :span="8">
                                             <div style="text-align: center;">
-                                                <img :src="getImgUrl('chairmen/fugee-tsung.png')" class="image" />
+                                                <img :src="index == 0 ? getImgUrl(`chairmen/fugee-tsung.png`) : getImgUrl(`chairmen/blank.png`)"
+                                                    class="image" />
                                                 <div style="text-align: center;">
                                                     <p class="chairname">{{ $t(`chairmen_03.CoChair.${index}.name`) }}</p>
                                                     <p class="chairdepartment">{{
@@ -95,20 +108,20 @@
                                         </el-col>
                                     </el-row>
                                 </div>
-                            </div>
+                            </div> -->
                             <div>
 
-                                <h2>
-                                    <span></span>
-                                    {{ $t("chairmen_03.title.1") }}
-                                </h2>
+                            <!-- <h2>
+                                <span></span>
+                                {{ $t("chairmen_03.title.1") }}
+                            </h2> -->
 
-                                <div class="sq_content">
+                            <!-- <div class="sq_content">
 
                                     <el-row :gutter="10">
                                         <el-col v-for="(o, index) in 3" :key="o" :span="8">
                                             <div style="text-align: center;">
-                                                <img :src="getImgUrl('chairmen/fugee-tsung.png')" class="image" />
+                                                <img :src="getImgUrl('chairmen/blank.png')" class="image" />
                                                 <div style="text-align: center;">
                                                     <p class="chairname">{{ $t(`chairmen_03.HonoraryCoChair.${index}.name`)
                                                     }}</p>
@@ -118,19 +131,60 @@
                                             </div>
                                         </el-col>
                                     </el-row>
+                                    <br>
                                     <el-row :gutter="10">
                                         <el-col v-for="(o, index) in [3, 4]" :key="o" :span="12">
                                             <div style="text-align: center;">
-                                                <img :src="getImgUrl('chairmen/fugee-tsung.png')" class="image" />
+                                                <img :src="getImgUrl('chairmen/blank.png')" class="image" />
                                                 <div style="text-align: center;">
                                                     <p class="chairname">{{ $t(`chairmen_03.HonoraryCoChair.${o}.name`) }}
                                                     </p>
                                                     <p class="chairdepartment">{{
-                                                        $t(`chairmen_03.HonoraryCoChair.${o}.department`) }}</p>
+                                                                $t(`chairmen_03.HonoraryCoChair.${o}.department`) }}</p>
+                                                        </div>
+                                                    </div>
+                                                </el-col>
+                                            </el-row>
+                                        </div> -->
+                                <div class="sq_content">
+                                    <div>
+                                        <el-row :gutter="20">
+                                            <el-col :span="8">
+                                                <p style="float: right; margin-top: 10px;">{{
+                                                    $t('chairmen_03.title.0') }}
+                                                </p>
+                                            </el-col>
+                                            <el-col :span="16">
+                                                <div v-for="(o, i) in 3" :key="i">
+                                                    <p class="chairname">
+                                                        {{ $t(`chairmen_03.CoChair.${i}.name`) }}
+                                                    </p>
+                                                    <p class="chairdepartment">
+                                                        {{ $t(`chairmen_03.CoChair.${i}.department`) }}
+                                                    </p>
                                                 </div>
-                                            </div>
-                                        </el-col>
-                                    </el-row>
+                                            </el-col>
+                                        </el-row>
+                                    </div>
+                                    <div>
+                                        <el-row :gutter="20">
+                                            <el-col :span="8">
+                                                <p style="float: right; margin-top: 10px;">{{
+                                                    $t('chairmen_03.title.1') }}
+                                                </p>
+                                            </el-col>
+                                            <el-col :span="16">
+                                                <div v-for="(o, i) in 3" :key="i">
+                                                    <p class="chairname">
+                                                        {{ $t(`chairmen_03.HonoraryCoChair.${i}.name`) }}
+                                                    </p>
+                                                    <p class="chairdepartment">
+                                                        {{ $t(`chairmen_03.HonoraryCoChair.${i}.department`) }}
+                                                    </p>
+                                                </div>
+                                            </el-col>
+                                        </el-row>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -146,8 +200,8 @@
                                 </h2>
                                 <p>{{ $t('keynote_04.0.department.0') }}
                                 </p>
-                                <p>
-                                    {{ $t('keynote_04.0.timeTitle') }}: {{ $t('keynote_04.0.time') }}
+                                <p style="margin-top: 10px;">
+                                    <span class="themeTitle">{{ $t('keynote_04.0.timeTitle') }}</span>: {{ $t('keynote_04.0.time') }}
                                 </p>
                                 <p class="themeTitle" style="margin-top: 10px; margin-bottom: 10px;">
                                     {{ $t('keynote_04.0.theme') }}
@@ -159,10 +213,98 @@
                                 <div class="info">
 
                                     <div style="float: right; margin-top: 10px; clear: both;" align="center">
-                                        <img :src="getImgUrl('inv1.jpg')" class="image" width="200" />
+                                        <!-- <img :src="getImgUrl('inv1.jpg')" class="image" width="200" /> -->
                                     </div>
                                     <span class="themeTitle">{{ $t('keynote_04.0.bioTitle') }}</span>: {{
                                         $t('keynote_04.0.bio') }}
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>
+                                    <span></span>
+                                    {{ $t('keynote_04.1.name') }}
+
+                                </h2>
+                                <p>{{ $t('keynote_04.1.department.0') }}
+                                </p>
+                                <p>{{ $t('keynote_04.1.department.1') }}
+                                </p>
+                                <p style="margin-top: 10px;">
+                                    <span class="themeTitle">{{ $t('keynote_04.1.timeTitle') }}</span>: {{ $t('keynote_04.0.time') }}
+                                </p>
+                                <p class="themeTitle" style="margin-top: 10px; margin-bottom: 10px;">
+                                    {{ $t('keynote_04.1.theme') }}
+                                </p>
+                                <div class="info">
+                                    <span class="themeTitle">{{ $t('keynote_04.1.infoTitle') }}</span>: {{
+                                        $t('keynote_04.1.info') }}
+                                </div>
+                                <div class="info">
+
+                                    <div style="float: right; margin-top: 10px; clear: both;" align="center">
+                                        <!-- <img :src="getImgUrl('inv1.jpg')" class="image" width="200" /> -->
+                                    </div>
+                                    <span class="themeTitle">{{ $t('keynote_04.1.bioTitle') }}</span>: {{
+                                        $t('keynote_04.1.bio') }}
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>
+                                    <span></span>
+                                    {{ $t('keynote_04.2.name') }}
+
+                                </h2>
+                                <p>{{ $t('keynote_04.2.department.0') }}
+                                </p>
+                                <p style="margin-top: 10px;">
+                                    <span class="themeTitle">{{ $t('keynote_04.2.timeTitle') }}</span>: {{ $t('keynote_04.2.time') }}
+                                </p>
+                                <p class="themeTitle" style="margin-top: 10px; margin-bottom: 10px;">
+                                    {{ $t('keynote_04.2.theme') }}
+                                </p>
+                                <div class="info">
+                                    <span class="themeTitle">{{ $t('keynote_04.2.infoTitle') }}</span>: {{
+                                        $t('keynote_04.2.info') }}
+                                </div>
+                                <div class="info">
+
+                                    <div style="float: right; margin-top: 10px; clear: both;" align="center">
+                                        <!-- <img :src="getImgUrl('inv1.jpg')" class="image" width="200" /> -->
+                                    </div>
+                                    <span class="themeTitle">{{ $t('keynote_04.2.bioTitle') }}</span>: {{
+                                        $t('keynote_04.2.bio') }}
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>
+                                    <span></span>
+                                    {{ $t('keynote_04.3.name') }}
+
+                                </h2>
+                                <p>{{ $t('keynote_04.3.department.0') }}
+                                </p>
+                                <p>{{ $t('keynote_04.3.department.1') }}
+                                </p>
+                                <p style="margin-top: 10px;">
+                                    <span class="themeTitle">{{ $t('keynote_04.3.timeTitle') }}</span>: {{ $t('keynote_04.3.time') }}
+                                </p>
+                                <p class="themeTitle" style="margin-top: 10px; margin-bottom: 10px;">
+                                    {{ $t('keynote_04.3.theme') }}
+                                </p>
+                                <div class="info">
+                                    <span class="themeTitle">{{ $t('keynote_04.3.infoTitle') }}</span>: {{
+                                        $t('keynote_04.3.info') }}
+                                </div>
+                                <div class="info">
+
+                                    <div style="float: right; margin-top: 10px; clear: both;" align="center">
+                                        <!-- <img :src="getImgUrl('inv1.jpg')" class="image" width="200" /> -->
+                                    </div>
+                                    <span class="themeTitle">{{ $t('keynote_04.3.bioTitle') }}</span>: {{
+                                        $t('keynote_04.3.bio') }}
                                 </div>
                             </div>
                         </div>
@@ -329,10 +471,10 @@
                     <div>
                             <div style="text-align: center;">
                                 <!-- <el-row :gutter="20">
-                                    <el-col :span="12">
-                                        <p style="float: right; margin-top: 10px;">{{ $t('publicationCommittee_07.title') }}</p>
-                                    </el-col>
-                                    <el-col :span="12"> -->
+                                                    <el-col :span="12">
+                                                        <p style="float: right; margin-top: 10px;">{{ $t('publicationCommittee_07.title') }}</p>
+                                                    </el-col>
+                                                    <el-col :span="12"> -->
                                 <div v-for="(o, i) in 40" :key="i">
                                     <p class="chairname">
                                         {{ $t(`internationalAdvisoryCommittee_09.${i}.name`) }}
@@ -342,7 +484,7 @@
                                     </p>
                                 </div>
                                 <!-- </el-col>
-                                </el-row> -->
+                                                </el-row> -->
 
                             </div>
                         </div>
@@ -454,12 +596,12 @@
                                 </el-col>
                                 <el-col :span="6">
                                     <div style="text-align: center;">
-                                            <img :src="getImgUrl('logo/guangdonggongye.png')" class="image" height="50" />
-                                            <p class="chairname">
-                                                {{ $t('institutions_10.CoOrganizer.6.name') }}
-                                            </p>
-                                        </div>
-                                    </el-col> -->
+                                                            <img :src="getImgUrl('logo/guangdonggongye.png')" class="image" height="50" />
+                                                            <p class="chairname">
+                                                                {{ $t('institutions_10.CoOrganizer.6.name') }}
+                                                            </p>
+                                                        </div>
+                                                    </el-col> -->
                             </el-row>
                             <br>
                             <el-row class="row-bg" justify="space-evenly">
@@ -594,14 +736,14 @@ export default {
 
 h1 {
     text-align: center;
-    margin-bottom: 10px;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
     font-size: 27px;
 }
 
 h2 {
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
     font-size: 25px;
 }
 
@@ -614,6 +756,7 @@ h3 {
     margin-bottom: 10px;
     line-height: 1.5;
     font-size: 16px;
+    text-align: justify;
 }
 
 .conferencePart {
