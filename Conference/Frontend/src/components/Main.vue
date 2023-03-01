@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Qing Shi
  * @Date: 2022-11-20 23:25:35
- * @LastEditTime: 2023-02-21 16:57:48
+ * @LastEditTime: 2023-02-23 17:06:02
 -->
 <template>
     <div style="font-size: 16px; color: #212529">
@@ -640,7 +640,7 @@ export default {
             bannerWidth: 0,
             bannerHeight: 0,
             screenWidth: 0,
-            showWidth: 880,
+            showWidth: 920,
             topic2: [0, 1, 2, 3],
             imgFolder: 'banner'
         };
@@ -674,12 +674,12 @@ export default {
     watch: {
         screenWidth: {
             handler: function (val) {
-                if (val * 0.8 < 880) {
-                    this.showWidth = val * 0.8;
+                if (val * 0.9 < 920) {
+                    this.showWidth = val * 0.9;
                     this.bannerHeight = this.showWidth / 20 * 11;
                 } else {
                     // console.log(val + '屏幕宽度大于900px')
-                    this.showWidth = 880;
+                    this.showWidth = 920;
                     this.bannerHeight = this.showWidth / 20 * 11;
                 }
             },
