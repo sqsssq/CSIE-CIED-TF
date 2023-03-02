@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Qing Shi
  * @Date: 2022-09-17 23:36:36
- * @LastEditTime: 2023-02-20 22:33:42
+ * @LastEditTime: 2023-03-02 17:05:45
 -->
 <template>
   <div class="common-layout" style="width: 100%; height: 100vh; overflow-y: auto; background-color: #FFFFFF;">
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import Header from '../components/cPart/header.vue';
+import Header from '../components/header.vue';
 import Main from '../components/Main.vue';
 
 export default {
@@ -65,4 +65,8 @@ export default {
 };
 </script>
 <style scoped>
+.el-header {
+  --el-header-height: auto;
+  --el-header-padding: 0px;
+}
 </style>

@@ -12,13 +12,14 @@ export default createI18n({
     messages: {
         "en-us": {
             language: "en",
+            menubar: ["Home", "Keynote", "Committee"],
             title: "2023 Annual International Conference for Chinese Scholars in Industrial Engineering (CSIE2023) \& 13th Forum for Council of Industrial Engineering and Logistics Management Department Heads (CIEDH2023)",
-            about_01_title: "01 ABOUT CSIE AND CIEDH",
+            about_01_title: "ABOUT CSIE AND CIEDH",
             about_01: [
                 "The CSIE 2023 and the 13th CIEDH will be held on August 10-12, 2023 in Guangzhou, China. The conference was hosted by the Industrial Engineering Institution of Chinese Mechanical Engineering Society and organized by the Guangzhou Campus of the Hong Kong University of Science and Technology. Professor Fugee TSUNG served as the organizer, and co-chairs with Professor  Guoquan HUANG and Professor Zhen HE.",
                 "The theme of the conference is 'Industry Engineering Foundation Leads the Transformation of Digital Intelligence'. CSIE is a major forum for global Chinese scholars to exchange the latest research results. It is an influential international conference in the field of industrial engineering and logistics management. The CIEDH 2023 aims to gather experts in related fields from all over the world to explore new opportdepartmenties and challenges in the field of industrial engineering driven by digital intelligence, to promote academic exchanges and discipline construction of Chinese industrial engineering, and further promote the in-depth interactive development of industrial engineering of the Guangdong-Hong Kong-Macao Greater Bay Area."
             ],
-            topics_02_title: "02 THEME AND TOPICS",
+            topics_02_title: "THEME AND TOPICS",
             topic_02: {
                 CSIE2023: {
                     title: "CSIE 2023",
@@ -68,7 +69,7 @@ export default createI18n({
                     ]
                 }
             },
-            chairmen_03_title: "03 CHAIRMEN",
+            chairmen_03_title: "CHAIRMEN",
             chairmen_03: {
                 title: ["Co-Chairs", "Honorary Co-Chairs"],
                 CoChair: [{
@@ -106,7 +107,7 @@ export default createI18n({
                 }
                 ]
             },
-            keynote_04_title: "04 KEYNOTE SPEAKERS",
+            keynote_04_title: "KEYNOTE SPEAKERS",
             keynote_04: [{
                 name: "Prof. Jianjun Shi",
                 department: ["The member of National Academy of Engineering of the USA"],
@@ -152,7 +153,7 @@ export default createI18n({
                 infoTitle: "ABSTRACT"
             }
             ],
-            programCommittee_05_title: "05 PROGRAM COMMITTEE",
+            programCommittee_05_title: "PROGRAM COMMITTEE",
             programCommittee_05: {
                 title: ["Program Committee", "Chairmen", "Members"],
                 Chairmen: [{
@@ -239,7 +240,7 @@ export default createI18n({
                 }
                 ],
             },
-            awardCommittee_06_title: "06 AWARD COMMITTEE",
+            awardCommittee_06_title: "AWARD COMMITTEE",
             awardCommittee_06: {
                 title: "Chairmen",
                 Chairmen: [{
@@ -256,7 +257,7 @@ export default createI18n({
                 }
                 ]
             },
-            publicationCommittee_07_title: "07 PUBLICATION COMMITTEE",
+            publicationCommittee_07_title: "PUBLICATION COMMITTEE",
             publicationCommittee_07: {
                 title: "Chairmen",
                 Chairmen: [{
@@ -269,7 +270,7 @@ export default createI18n({
                 }
                 ]
             },
-            societies_08_title: "08 PERSONS IN CHARGE OF THE CO-ORGANIZERS (SOCIETIES)",
+            societies_08_title: "PERSONS IN CHARGE OF THE CO-ORGANIZERS (SOCIETIES)",
             societies_08: [{
                 name: "Zhaofang Mao",
                 department: ["Industrial Engineering and Management Branch, Society of Management Science and Engineering of China"]
@@ -291,7 +292,7 @@ export default createI18n({
                 department: ["Guangdong University Value Engineering Research Association"]
             }
             ],
-            internationalAdvisoryCommittee_09_title: "09 INTERNATIONAL ADVISORY COMMITTEE",
+            internationalAdvisoryCommittee_09_title: "INTERNATIONAL ADVISORY COMMITTEE",
             internationalAdvisoryCommittee_09: [{
                 name: "Anthony Shun Fung Chiu",
                 department: "De La Salle University"
@@ -453,7 +454,7 @@ export default createI18n({
                 department: "Shanghai Jiao Tong University"
             }
             ],
-            institutions_10_title: "10 INSTITUTIONS",
+            institutions_10_title: "INSTITUTIONS",
             institutions_10: {
                 title: ["Host", "Organizer", "Co-organizers"],
                 Host: [{
@@ -501,13 +502,14 @@ export default createI18n({
 
         "zh-cn": {
             language: "zh",
+            menubar: ["主页", "报告", "委员会"],
             title: "2023华人学者工业工程国际年会暨全球华人工业工程与物流管理院长系主任联席会",
-            about_01_title: "01 会议简介",
+            about_01_title: "会议简介",
             about_01: [
                 "2023年华人学者工业工程国际年会（CSIE2023）暨第十三届全球华人工业工程与物流管理院长系主任联席会（CIEDH2023）将于2023年8月10日到12日在香港科技大学广州校区举办。本次会议由中国机械工程学会工业工程分会主办，香港科技大学（广州）承办。宗福季教授担任本次会议主理人，并与黄国全教授、何桢教授共同担任联席主席。",
                 "大会主题为“工业工程筑基引领数智化转型”。华人学者工业工程国际年会（CSIE2023）是全球华人学者交流工业工程相关最新研究成果的一个主要论坛，这是一个在工业工程及物流管理领域深具影响力的国际会议。第十三届全球华人工业工程与物流管理院长系主任联席会（CIEDH2023）旨在荟聚世界各地相关领域的专家、学者及从业人员，共同探寻数智化驱动下工业工程领域面临的新机遇与新挑战，发现工业工程人才的新需求，传播新的经验和技术，促进我国工业工程学科的学术交流和学科建设，进一步推动大湾区一体化下工业工程的产学研深度互动发展。"
             ],
-            topics_02_title: "02 会议主题",
+            topics_02_title: "会议主题",
             topic_02: {
                 CSIE2023: {
                     title: "2023年华人学者工业工程国际年会",
@@ -558,7 +560,7 @@ export default createI18n({
                     ]
                 }
             },
-            chairmen_03_title: "03 会议主席",
+            chairmen_03_title: "会议主席",
             chairmen_03: {
                 title: ["联席主席", "荣誉联席主席"],
                 CoChair: [{
@@ -596,7 +598,7 @@ export default createI18n({
                 }
                 ]
             },
-            keynote_04_title: "04 大会报告",
+            keynote_04_title: "大会报告",
             keynote_04: [{
                 name: "史建军",
                 department: ["美国国家工程院院士"],
@@ -642,7 +644,7 @@ export default createI18n({
                 infoTitle: "摘要"
             }
             ],
-            programCommittee_05_title: "05 程序委员会",
+            programCommittee_05_title: "程序委员会",
             programCommittee_05: {
                 title: ["程序委员会", "主席", "成员"],
                 Chairmen: [{
@@ -729,7 +731,7 @@ export default createI18n({
                 }
                 ],
             },
-            awardCommittee_06_title: "06 奖励委员会",
+            awardCommittee_06_title: "奖励委员会",
             awardCommittee_06: {
                 title: "主席",
                 Chairmen: [{
@@ -746,7 +748,7 @@ export default createI18n({
                 }
                 ]
             },
-            publicationCommittee_07_title: "07 出版委员会",
+            publicationCommittee_07_title: "出版委员会",
             publicationCommittee_07: {
                 title: "主席",
                 Chairmen: [{
@@ -759,7 +761,7 @@ export default createI18n({
                 }
                 ]
             },
-            societies_08_title: "08 各协办单位（学会）负责人",
+            societies_08_title: "各协办单位（学会）负责人",
             societies_08: [{
                 name: "毛照昉",
                 department: ["管理科学与工程学会工业工程与管理分会"]
@@ -781,7 +783,7 @@ export default createI18n({
                 department: ["广东省高校价值工程研究会"]
             }
             ],
-            internationalAdvisoryCommittee_09_title: "09 国际咨询委员会",
+            internationalAdvisoryCommittee_09_title: "国际咨询委员会",
             internationalAdvisoryCommittee_09: [{
                 name: "Anthony Shun Fung Chiu",
                 department: "De La Salle University"
@@ -943,7 +945,7 @@ export default createI18n({
                 department: "Shanghai Jiao Tong University"
             }
             ],
-            institutions_10_title: "10 举办单位",
+            institutions_10_title: "举办单位",
             institutions_10: {
                 title: ["主办单位", "承办单位", "协办单位"],
                 Host: [{
