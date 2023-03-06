@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Qing Shi
  * @Date: 2022-11-20 23:25:35
- * @LastEditTime: 2023-03-02 17:01:44
+ * @LastEditTime: 2023-03-06 19:29:28
 -->
 <template>
     <div ref="cf_header" style="width: 100%;">
@@ -61,7 +61,7 @@ const activeIndex = ref('1');
 const { locale } = useI18n();
 const router = useRouter();
 
-const bannerImg = [1, 2, 3, 4]
+const bannerImg = [1]
 const bannerWidth = ref(0)
 const bannerHeight = ref(0)
 
@@ -82,10 +82,10 @@ onMounted(() => {
 
 
 function getAssetsFile (url) {
-    let imgFolder = 'banner_full';
+    let imgFolder = 'banner_new';
     if (localStorage.getItem('lang') == 'zh-cn')
         imgFolder = 'banner_fullZH'
-    return new URL(`../assets/img/${imgFolder}/${url}.jpg`, import.meta.url).href
+    return new URL(`../assets/img/${imgFolder}/${url}.png`, import.meta.url).href
 }
 
 const changeLang = (lang) => {
