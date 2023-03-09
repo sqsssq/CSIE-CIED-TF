@@ -8,7 +8,7 @@
   <div class="common-layout" style="width: 100%; height: 100vh; overflow-y: auto; background-color: #FFFFFF;">
     <el-container>
       <el-header>
-        <Header/>
+        <Header :activeMenu="'1'"/>
       </el-header>
       <el-main>
         <Main />

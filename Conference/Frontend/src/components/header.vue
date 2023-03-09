@@ -16,10 +16,10 @@
                 <el-menu-item index="1" @click="jump('')">
                     {{ $t('menubar.0') }}
                 </el-menu-item>
-                <el-menu-item index="3" @click="jump('keynote')">
+                <el-menu-item index="2" @click="jump('keynote')">
                     {{ $t('menubar.1') }}
                 </el-menu-item>
-                <el-menu-item index="4" @click="jump('committee')">
+                <el-menu-item index="3" @click="jump('committee')">
                     <!-- <router-link to="/committee"></router-link> -->
                     {{ $t('menubar.2') }}
                 </el-menu-item>
@@ -50,14 +50,20 @@
 </template>
 <script setup>
 import { useI18n } from 'vue-i18n';
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, toRefs, defineProps } from 'vue';
 import { useDataStore } from "@/stores/counter";
 import { useRouter } from 'vue-router';
 
 const cf_header = ref(null);
 
 const dataStore = useDataStore();
-const activeIndex = ref('1');
+
+const props = defineProps({
+    activeMenu: String
+})
+// const { m_status } = toRefs(props)
+// console.log(m_status, props)
+const activeIndex = props.activeMenu;
 const { locale } = useI18n();
 const router = useRouter();
 
@@ -74,10 +80,16 @@ const jump = (url) => {
     });
 }
 
+
 onMounted(() => {
     bannerWidth.value = cf_header.value.clientWidth;
     bannerHeight.value = bannerWidth.value * 2633 / 8000;
     // console.log(bannerHeight.value);
+    // dataStore.$subscribe((mutations, state) => {
+
+    //     activeIndex.value = '2';
+    //     console.log(activeIndex.value, typeof(activeIndex.value));
+    // })
 })
 
 

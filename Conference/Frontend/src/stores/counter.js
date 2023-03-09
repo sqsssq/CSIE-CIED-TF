@@ -24,7 +24,8 @@ export const useDataStore = defineStore("dataStore", {
     return {
       msg: 'Hello, Vue SQ',
       model: null,
-      lang: 'en-us'
+      lang: 'en-us',
+      defaultValue: 1
     }
   },
   actions: {

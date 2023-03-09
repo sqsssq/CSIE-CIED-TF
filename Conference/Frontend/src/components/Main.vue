@@ -81,7 +81,7 @@
                     </div>
                     <div id="10" class="conferencePart">
                         <h1>
-                            <SPAN></SPAN>{{ $t('institutions_10_title') }}
+                            <span></span>{{ $t('institutions_10_title') }}
                         </h1>
                         <div>
                             <h2>

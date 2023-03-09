@@ -8,7 +8,7 @@
     <div class="common-layout" style="width: 100%; height: 100vh; overflow-y: auto; background-color: #FFFFFF;">
         <el-container>
             <el-header>
-                <Header />
+                <Header :activeMenu="activeMenu" />
             </el-header>
             <el-main>
                 <Keynote />
@@ -25,6 +25,7 @@
 <script>
 import Header from '../components/header.vue';
 import Keynote from '../components/keynote.vue';
+import { useDataStore } from "@/stores/counter";
 export default {
     name: "home_view",
     data () {
@@ -32,7 +33,8 @@ export default {
             msgH: null,
             timeData: null,
             sliceData: null,
-            basicData: null
+            basicData: null,
+            activeMenu: '2'
         };
     },
     computed: {
@@ -50,7 +52,8 @@ export default {
         }
     },
     mounted () {
-        // const dataStore = useDataStore();
+        const dataStore = useDataStore();
+        dataStore.defaultValue = '2';
         // dataStore.fetchHello();
         // this.msgH = dataStore.msg;
         //   this.timeData = timeData;
