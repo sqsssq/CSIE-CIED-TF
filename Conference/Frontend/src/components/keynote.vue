@@ -54,8 +54,8 @@
                                 </h2>
                                 <p>{{ $t('keynote_04.1.department.0') }}
                                 </p>
-                                <p>{{ $t('keynote_04.1.department.1') }}
-                                </p>
+                                <!-- <p>{{ $t('keynote_04.1.department.1') }}
+                                </p> -->
                                 <p style="margin-top: 10px;">
                                     <span class="themeTitle">{{ $t('keynote_04.1.timeTitle') }}</span>: {{ $t('keynote_04.0.time') }}
                                 </p>
@@ -83,6 +83,9 @@
 
                                 </h2>
                                 <p>{{ $t('keynote_04.2.department.0') }}
+                                </p>
+                                
+                                <p>{{ $t('keynote_04.2.department.1') }}
                                 </p>
                                 <p style="margin-top: 10px;">
                                     <span class="themeTitle">{{ $t('keynote_04.2.timeTitle') }}</span>: {{ $t('keynote_04.2.time') }}
@@ -112,8 +115,8 @@
                                 </h2>
                                 <p>{{ $t('keynote_04.3.department.0') }}
                                 </p>
-                                <p>{{ $t('keynote_04.3.department.1') }}
-                                </p>
+                                <!-- <p>{{ $t('keynote_04.3.department.1') }}
+                                </p> -->
                                 <p style="margin-top: 10px;">
                                     <span class="themeTitle">{{ $t('keynote_04.3.timeTitle') }}</span>: {{ $t('keynote_04.3.time') }}
                                 </p>
@@ -131,6 +134,35 @@
                                     </div>
                                     <span class="themeTitle">{{ $t('keynote_04.3.bioTitle') }}</span>: {{
                                         $t('keynote_04.3.bio') }}
+                                </div>
+                            </div>
+                            <div>
+                                <h2>
+                                    <span></span>
+                                    {{ $t('keynote_04.4.name') }}
+
+                                </h2>
+                                <p>{{ $t('keynote_04.4.department.0') }}
+                                </p>
+                                <p>{{ $t('keynote_04.4.department.1') }}
+                                </p>
+                                <p style="margin-top: 10px;">
+                                    <span class="themeTitle">{{ $t('keynote_04.4.timeTitle') }}</span>: {{ $t('keynote_04.4.time') }}
+                                </p>
+                                <p class="themeTitle" style="margin-top: 10px; margin-bottom: 10px;">
+                                    {{ $t('keynote_04.4.theme') }}
+                                </p>
+                                <div class="info">
+                                    <span class="themeTitle">{{ $t('keynote_04.4.infoTitle') }}</span>: {{
+                                        $t('keynote_04.4.info') }}
+                                </div>
+                                <div class="info">
+
+                                    <div style="float: right; margin-top: 10px; clear: both;" align="center">
+                                        <!-- <img :src="getImgUrl('inv1.jpg')" class="image" width="200" /> -->
+                                    </div>
+                                    <span class="themeTitle">{{ $t('keynote_04.4.bioTitle') }}</span>: {{
+                                        $t('keynote_04.4.bio') }}
                                 </div>
                             </div>
                         </div>

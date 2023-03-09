@@ -14,10 +14,10 @@ export default createI18n({
             language: "en",
             menubar: ["Home", "Keynote", "Committee"],
             title: "2023 Annual International Conference for Chinese Scholars in Industrial Engineering (CSIE2023) \& 13th Forum for Council of Industrial Engineering and Logistics Management Department Heads (CIEDH2023)",
-            about_01_title: "ABOUT CSIE AND CIEDH",
+            about_01_title: "ABOUT CSIE AND CIEDH 2023",
             about_01: [
-                "The conference is hosted by the Industrial Engineering Institution of Chinese Mechanical Engineering Society and organized by the Hong Kong University of Science and Technology (Guangzhou). Professor Fugee TSUNG serves as the organizer, and cochairs the conference with Professor Guoquan HUANG and Professor Zhen HE.",
-                "The theme of the conference is 'Industry Engineering Foundation Leads the Transformation of Digital Intelligence'. CSIE is a major forum for global Chinese scholars to exchange the latest research results. It is an influential international conference in the field of industrial engineering and logistics management. The CIEDH 2023 aims to gather experts in related fields from all over the world to explore new opportdepartmenties and challenges in the field of industrial engineering driven by digital intelligence, to promote academic exchanges and discipline construction of Chinese industrial engineering, and further promote the in-depth interactive development of industrial engineering of the Guangdong-Hong Kong-Macao Greater Bay Area."
+                "The CSIE 2023 and the 13th CIEDH will take place on August 10-12, 2023 in Guangzhou, China. The conference is hosted by the Industrial Engineering Institution of Chinese Mechanical Engineering Society and organized by the Hong Kong University of Science and Technology (Guangzhou). The conference is organized by Professor Fugee TSUNG, Professor Guoquan HUANG, and Professor Zhen HE.",
+                "The conference theme is 'Industry Engineering Foundation Leads the Transformation of Digital Intelligence,' and it provides a major forum for global Chinese scholars to exchange the latest research results. It is an influential international conference in the field of industrial engineering and logistics management. The CIEDH 2023 aims to gather experts in related fields from all over the world to explore new opportunities and challenges in the field of industrial engineering driven by digital intelligence. The conference also aims to promote academic exchanges and discipline construction of Chinese industrial engineering and further promote the in-depth interactive development of industrial engineering of the Guangdong-Hong Kong-Macao Greater Bay Area. Join us for this exciting event and be part of the global conversation on the future of industrial engineering."
             ],
             topics_02_title: "THEME AND TOPICS",
             topic_02: {
@@ -114,6 +114,17 @@ export default createI18n({
                 info: "to be determined",
                 theme: "to be determined",
                 bio: "Jianjun SHI received the B.S. and M.S. degrees in electrical engineering from the Beijing Institute of Technology, Beijing, China, in 1984 and 1987, respectively, and the Ph.D. degree in mechanical engineering from the University of Michigan, Ann Arbor, MI, USA, in 1992.,He is currently the Carolyn J. Stewart Chair and a Professor of the H. Milton Stewart School of Industrial and Systems Engineering, with joint appointment at the George W. Woodruff School of Mechanical Engineering, Georgia Institute of Technology. His methodologies integrate system informatics, advanced statistics, and control theory for the design and operational improvements of manufacturing and service systems by fusing engineering systems models with data science methods. His research interests include development and application of data enabled manufacturing.,Dr. Shi is a fellow of IISE, ASME, SME, and INFORMS, an Academician of the International Academy for Quality, and a member of the U.S. National Academy of Engineering (NAE).",
+                bioTitle: "BIOGRAPHY",
+                timeTitle: "Time",
+                time: "to be determined",
+                infoTitle: "ABSTRACT"
+            },
+            {
+                name: "Prof. Z. Max Shen",
+                department: ["Vice-President and Pro-Vice-Chancellor of HKU"],
+                info: "to be determined",
+                theme: "to be determined",
+                bio: "Professor Shen obtained his PhD from Northwestern University, USA in 2000. He started his academic career as Assistant Professor at the University of Florida in the same year, and joined the University of California, Berkeley in 2004, where he rose through the academic ranks to become Chancellor’s Professor and Chair of the Department of Industrial Engineering and Operations Research and Professor of the Department of Civil and Environmental Engineering. He was also a Centre Director at the Tsinghua-Berkeley Institute in Shenzhen and an Honorary Professor at Tsinghua University, China. Professor Shen joined HKU in 2021. Internationally recognized as a top scholar in his field, Professor Shen is a Fellow of the Institute for Operations Research and the Management Sciences (INFORMS), the President-Elect of the Production and Operations Management Society (POMS), and a past President of the Society of Locational Analysis of INFORMS.",
                 bioTitle: "BIOGRAPHY",
                 timeTitle: "Time",
                 time: "to be determined",
@@ -605,6 +616,17 @@ export default createI18n({
                 info: "待定",
                 theme: "待定",
                 bio: "于1984年获得北京工业学院（现北京理工大学）学士学位；1987年获得北京工业学院硕士学位；1992年获得密歇根大学机械工程博士学位。目前担任佐治亚理工学院工业与系统工程学院的主席和教授。其方法论通过将工程系统模型与数据科学方法相融合，将系统信息学、高级统计学和控制理论相结合，用于制造和服务系统的设计和运营改进。研究领域包括数据赋能制造的开发和应用。同时是国际质量科学院院士，美国国家工程院院士，以及国际工业工程学会、美国机械工程师学会、运筹学与管理学专业学会等国际组织的会员。",
+                bioTitle: "个人简介",
+                timeTitle: "时间",
+                time: "待定",
+                infoTitle: "摘要"
+            },
+            {
+                name: "申作军",
+                department: ["香港大学副校长"],
+                info: "待定",
+                theme: "待定",
+                bio: "于2000年在美国西北大学获得博士学位，同年在佛罗里达大学任助理教授，2004年加入加州大学伯克利分校，之后晋升为加州大学伯克利分校校长教授及工业工程及运筹学系系主任，以及土木与环境工程系教授，同时出任清华-伯克利深圳学院中心主任，以及清华大学名誉教授及工业工程系主任。于2021年加入香港大学，并任副校长一职。\n主要从事供应链管理领域的研究工作，重点关注供应链系统优化与运作管理、应急供应链规划与设计、交通运输优化、生产性服务系统等方面。负责多个美国国家科学基金会项目，在国际重要学术期刊上发表论文80余篇，是教材\"Fundamentals of Supply Chain Theory\"的作者之一。曾获2003年美国国家科学基金会杰出青年教授奖、2008年美国运筹学和管理学研究协会查克·雷夫尔新星奖等。",
                 bioTitle: "个人简介",
                 timeTitle: "时间",
                 time: "待定",
