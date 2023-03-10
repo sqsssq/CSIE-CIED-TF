@@ -228,7 +228,7 @@ export default {
     components: {}
 }
 </script>
-<style>
+<style scoped>
 .chairname {
     margin-top: 10px;
 }
@@ -280,7 +280,7 @@ h1 {
 
 h2 {
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 70px;
     font-size: 25px;
 }
 

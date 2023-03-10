@@ -42,7 +42,7 @@
                                     <h3>
                                         {{ $t("topic_02.CSIE2023.theme") }}
                                     </h3>
-                                    <h3 style="font-size: 22px;">
+                                    <h3 style="">
                                         {{ $t("topic_02.CSIE2023.notice") }}
                                     </h3>
                                     <el-row>
@@ -67,7 +67,7 @@
                             <div>
                                 <h2>{{ $t("topic_02.CIEDH2023.title") }}</h2>
                                 <div class="sq_content">
-                                    <h3 style="font-size: 22px;">
+                                    <h3 style="">
                                         {{ $t("topic_02.CIEDH2023.notice") }}
                                     </h3>
                                     <ul>
