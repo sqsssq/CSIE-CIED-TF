@@ -69,7 +69,7 @@ export default createI18n({
                     ]
                 }
             },
-            chairmen_03_title: "CHAIRMEN",
+            chairmen_03_title: "CHAIRPERSONS",
             chairmen_03: {
                 title: ["Co-Chairs", "Honorary Co-Chairs"],
                 CoChair: [{
@@ -110,7 +110,7 @@ export default createI18n({
             keynote_04_title: "KEYNOTE SPEAKERS",
             keynote_04: [{
                 name: "Prof. Jianjun Shi",
-                department: ["The member of National Academy of Engineering of the USA"],
+                department: ["The Carolyn J. Stewart Chair and a Professor of the H. Milton Stewart School of Industrial and Systems Engineering", "The member of National Academy of Engineering of the USA"],
                 info: "to be determined",
                 theme: "to be determined",
                 bio: "Jianjun SHI received the B.S. and M.S. degrees in electrical engineering from the Beijing Institute of Technology, Beijing, China, in 1984 and 1987, respectively, and the Ph.D. degree in mechanical engineering from the University of Michigan, Ann Arbor, MI, USA, in 1992.,He is currently the Carolyn J. Stewart Chair and a Professor of the H. Milton Stewart School of Industrial and Systems Engineering, with joint appointment at the George W. Woodruff School of Mechanical Engineering, Georgia Institute of Technology. His methodologies integrate system informatics, advanced statistics, and control theory for the design and operational improvements of manufacturing and service systems by fusing engineering systems models with data science methods. His research interests include development and application of data enabled manufacturing.,Dr. Shi is a fellow of IISE, ASME, SME, and INFORMS, an Academician of the International Academy for Quality, and a member of the U.S. National Academy of Engineering (NAE).",
@@ -166,7 +166,7 @@ export default createI18n({
             ],
             programCommittee_05_title: "PROGRAM COMMITTEE",
             programCommittee_05: {
-                title: ["Program Committee", "Chairmen", "Members"],
+                title: ["Program Committee", "Chairpersons", "Members"],
                 Chairmen: [{
                     name: "Congdong Li ",
                     department: "Jinan University"
@@ -207,7 +207,7 @@ export default createI18n({
                 ],
             },
             organizationCommittee_05: {
-                title: ["Organization Committee", "Chairmen", "Members"],
+                title: ["Organization Committee", "Chairpersons", "Members"],
                 Chairmen: [{
                     name: "Ting Qu",
                     department: "Jinan University"
@@ -253,7 +253,7 @@ export default createI18n({
             },
             awardCommittee_06_title: "AWARD COMMITTEE",
             awardCommittee_06: {
-                title: "Chairmen",
+                title: "Chairpersons",
                 Chairmen: [{
                     name: "Wenhui Zhou",
                     department: "South China University of Technology"
@@ -270,7 +270,7 @@ export default createI18n({
             },
             publicationCommittee_07_title: "PUBLICATION COMMITTEE",
             publicationCommittee_07: {
-                title: "Chairmen",
+                title: "Chairpersons",
                 Chairmen: [{
                     name: "Fu Hui",
                     department: "Guangdong University of Technology"
@@ -612,7 +612,7 @@ export default createI18n({
             keynote_04_title: "大会报告",
             keynote_04: [{
                 name: "史建军",
-                department: ["美国国家工程院院士"],
+                department: ["佐治亚理工学院工业与系统工程学院主席和教授","美国国家工程院院士"],
                 info: "待定",
                 theme: "待定",
                 bio: "于1984年获得北京工业学院（现北京理工大学）学士学位；1987年获得北京工业学院硕士学位；1992年获得密歇根大学机械工程博士学位。目前担任佐治亚理工学院工业与系统工程学院的主席和教授。其方法论通过将工程系统模型与数据科学方法相融合，将系统信息学、高级统计学和控制理论相结合，用于制造和服务系统的设计和运营改进。研究领域包括数据赋能制造的开发和应用。同时是国际质量科学院院士，美国国家工程院院士，以及国际工业工程学会、美国机械工程师学会、运筹学与管理学专业学会等国际组织的会员。",

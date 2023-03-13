@@ -26,6 +26,8 @@
                                 </h2>
                                 <p>{{ $t('keynote_04.0.department.0') }}
                                 </p>
+                                <p>{{ $t('keynote_04.0.department.1') }}
+                                </p>
                                 <p style="margin-top: 10px;">
                                     <span class="themeTitle">{{ $t('keynote_04.0.timeTitle') }}</span>: {{ $t('keynote_04.0.time') }}
                                 </p>
@@ -54,6 +56,8 @@
                                 </h2>
                                 <p>{{ $t('keynote_04.1.department.0') }}
                                 </p>
+                                <!-- <p>{{ $t('keynote_04.1.department.1') }}
+                                </p> -->
                                 <!-- <p>{{ $t('keynote_04.1.department.1') }}
                                 </p> -->
                                 <p style="margin-top: 10px;">
